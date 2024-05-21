@@ -176,7 +176,12 @@ nav ul li a {
 }
 
 .hero-right img {
-    width: 90%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 .hero-right {
@@ -186,41 +191,52 @@ nav ul li a {
 
 /* Gallery section */
 #Gallery {
-    background-color: var(--secondaryBackgroundColor);
-    padding: var(--sectionpadding);
-}
-
-.Gallery .pre-title {
-    margin: 0 auto;
-}
-
-.Gallery-title {
-    text-align: center;
-
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .Gallery {
-    padding: 3rem 2rem;
-    text-align: center;
-    background: var(--primaryBackgroundColor);
-    border-radius: var(--itemBorderRadius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-.Gallery h4 {
-    margin: 1.5rem 0;
-    font-weight: 500;
-    font-size: 1.05rem;
+.Gallery .pre-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-.Gallery-icon {
-    background: var(--thirdBackgroundColor);
-   
+.Gallery .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5d51e8; 
+    margin-bottom: 20px;
 }
 
-.Gallery-icon {
-    fill: var(--primaryIconColor);
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
+.grid-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.grid-3 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* Blogs section */
 #Blogs {
     padding: var(--sectionpadding);
@@ -293,6 +309,20 @@ nav ul li a {
 
 .contact-form div {
     margin-bottom: 1.4rem;
+}
+
+.contact .pre-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5d51e8; 
+    margin-bottom: 20px;
 }
 
 .contact-form input, .contact-form textarea {
